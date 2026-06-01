@@ -1,0 +1,121 @@
+body {
+  background-image: url("Snacks.jpeg");
+  background-size: 60%;              /* reduce el tamaño del fondo */
+  background-position: center top;   /* coloca la imagen debajo del encabezado */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-weight: bold;                 /* todas las letras en negrita */
+}
+
+/* Header */
+header {
+  background-color: rgba(107, 66, 38, 0.9);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main */
+main {
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+  font-weight: bold;
+  background: none;   /* quitamos la franja blanca para que se vea el fondo */
+}
+
+h2 {
+  color: #6b4226;
+  font-weight: bold;
+}
+
+/* Botones */
+button {
+  background-color: #6b4226;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+/* Contenedores */
+#lista-items, 
+#lista-meriendas, 
+#tarjetas-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Tarjetas */
+.item-card, article {
+  background-color: white; /* fondo inicial */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 15px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, background-color 0.3s ease; /* animación combinada */
+  font-weight: bold;
+}
+
+/* Hover con animación + cambio de color */
+.item-card:hover, article:hover {
+  transform: scale(1.05); /* animación de agrandado */
+  background-color: rgba(179, 122, 76, 0.6); /* marrón clarito del footer */
+}
+
+/* Footer */
+footer {
+  background-color: rgba(179, 122, 76, 0.6); /* marrón suave con transparencia */
+  color: rgba(0,0,0,0.7);                    /* negro semitransparente */
+  text-align: center;
+  padding: 15px 0;
+  font-size: 16px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-weight: bold;
+  border-top: 3px solid #6b4226;
+}
+.seleccionada {
+  background-color: rgba(179, 122, 76, 0.6);
+  transform: scale(1.05);
+  border: 2px solid #6b4226;
+  cursor: default;
+ }
