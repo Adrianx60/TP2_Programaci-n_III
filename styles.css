@@ -1,12 +1,12 @@
 body {
   background-image: url("Snacks.jpeg");
-  background-size: 60%;              /* reduce el tamaño del fondo */
-  background-position: center top;   /* coloca la imagen debajo del encabezado */
+  background-size: 60%;              
+  background-position: center top;  
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin: 0;
   font-family: Arial, sans-serif;
-  font-weight: bold;                 /* todas las letras en negrita */
+  font-weight: bold;                
 }
 
 /* Header */
@@ -45,7 +45,7 @@ main {
   border-radius: 10px;
   margin: 20px;
   font-weight: bold;
-  background: none;   /* quitamos la franja blanca para que se vea el fondo */
+  background: none;  
 }
 
 h2 {
@@ -90,20 +90,19 @@ button:hover {
   width: 200px;
   text-align: center;
   box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
-  transition: transform 0.2s ease, background-color 0.3s ease; /* animación combinada */
+  transition: transform 0.2s ease, background-color 0.3s ease; 
   font-weight: bold;
 }
 
-/* Hover con animación + cambio de color */
 .item-card:hover, article:hover {
-  transform: scale(1.05); /* animación de agrandado */
-  background-color: rgba(179, 122, 76, 0.6); /* marrón clarito del footer */
+  transform: scale(1.05); 
+  background-color: rgba(179, 122, 76, 0.6); 
 }
 
 /* Footer */
 footer {
-  background-color: rgba(179, 122, 76, 0.6); /* marrón suave con transparencia */
-  color: rgba(0,0,0,0.7);                    /* negro semitransparente */
+  background-color: rgba(179, 122, 76, 0.6); 
+  color: rgba(0,0,0,0.7);                    
   text-align: center;
   padding: 15px 0;
   font-size: 16px;
