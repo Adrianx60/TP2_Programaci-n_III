@@ -35,6 +35,16 @@ if (document.getElementById('lista-items')) {
     renderizar(filtrados);
   });
 
+  document.getElementById("btn-mani").addEventListener("click", function() {
+    const filtrados = productos.filter(function(el) { return el.categoria === "maní"; });
+    renderizar(filtrados);
+  });
+
+  document.getElementById("btn-snacks").addEventListener("click", function() {
+    const filtrados = productos.filter(function(el) { return el.categoria === "snack dulce" || el.categoria === "snack salado"; });
+    renderizar(filtrados);
+  });
+
   renderizar(productos);
 }
 
@@ -54,6 +64,15 @@ if (document.getElementById('btn-contar')) {
     { nombre: "Almendras", stock: 14 },
     { nombre: "Nuez Mariposa Chandler", stock: 13 }
   ];
+
+  // Mostrar lista de meriendas al cargar la página usando forEach
+  const listaMeriendas = document.getElementById("lista-meriendas");
+  productos.forEach(function(el) {
+    const div = document.createElement("div");
+    div.classList.add("item-card");
+    div.textContent = el.nombre;
+    listaMeriendas.appendChild(div);
+  });
 
   const btnContar = document.getElementById("btn-contar");
   const resultado = document.getElementById("contador-resultado");
@@ -114,4 +133,3 @@ if (document.getElementById('tarjetas-container')) {
     contador.textContent = `${seleccionadas} tarjeta/s seleccionada/s.`;
   }
 }
-
